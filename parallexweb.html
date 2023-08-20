@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>projectparallex</title>
+</head>
+<style>
+    .wrapper{
+        height: 100vh;
+        overflow-x: hidden;
+        overflow-y: auto;
+        perspective: 10px;
+       align-self: ;
+    }
+    .container{
+        position: relative;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transform-style: preserve-3d;
+        z-index: -1;
+    }
+    .backg{
+        transform: translateZ(-40px)scale(5);
+        
+    }
+    .foreg{
+        transform: translateZ(-20px)scale(3);
+    }
+    
+    .backg , .foreg{
+        position: absolute;
+       height: 100%;
+       width: 100%;
+       z-index: -1;
+       object-fit: cover;
+    }
+    h1{
+    position: absolute;
+    top:5rem;
+    font-size:5rem;
+    letter-spacing:4px;
+    color:white;
+    text-shadow:0 0 10px rgba(0,0,0,0.3);
+    }
+
+    .sec{
+        background-color: rgb(38, 37, 37);
+        color: white;
+        padding:2px;
+    }
+
+    
+    .bg2{
+        background-image: url(sport-1.jpg);
+    }
+    .bg3{
+        background-image: url(sport-2.jpg);
+    }
+    .bg4{
+        background-image: url(sport-3.jpg);
+    }
+    .text{
+        font-size:large;
+        padding:0 8rem;
+        margin:5rem 0;
+        
+    }
+    
+    .bg{
+        position:relative;
+        width:100%;
+        background-attachment: fixed;
+        background-position: center;
+        background-size: cover; 
+        height:500px;
+    }
+    #tag{
+        font-size: 3rem;
+        margin:5rem;
+    }
+
+    .desc{
+        position:absolute;
+        padding:1rem 0.5rem;
+        margin:2rem;
+        background-color: white;
+        top:40%;
+        left:55%;
+        transform: translateX(-50%)  translateX(-50%);
+        color: black;
+        font-size: 2rem;
+    }
+
+</style>
+<body>
+    <div class="wrapper">
+
+        <div class="container">
+            <img src="background.png" class="backg">
+            <img src="foreground.png" class="foreg">
+            <h1>ADVENTURE</h1>
+
+        </div>
+
+        <section class="sec">
+                <h2 id="tag">ADVENTURE TIME!</h2>
+            <p class="text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sequi similique, quidem fugit voluptatibus repellat voluptatum eos rem assumenda aut inventore voluptates sint illum esse, dignissimos voluptas hic dolores debitis. Fugiat quo ad reprehenderit explicabo, commodi sit quibusdam qui quia molestiae recusandae, quaerat quasi iste? Recusandae id neque maxime voluptas assumenda.
+                <br> 
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, distinctio.
+            </p>
+            <div class="bg bg2">
+                <h2 class="desc">BIKING</h2>
+
+            </div>
+            <p class="text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Pariatur dignissimos culpa nobis accusantium iure! Nihil temporibus autem inventore necessitatibus suscipit voluptatem blanditiis provident dicta veritatis dolor soluta, in ab, molestias quisquam facere, eum id adipisci incidunt deserunt animi aspernatur quidem? Labore cum, voluptatem sed numquam a provident neque amet possimus!
+                <br> 
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, distinctio.
+            </p>
+            <div class="bg bg3">
+                <h2 class="desc">PARA GLIDING</h2>
+
+            </div>
+            <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. A, officia! Aperiam dicta recusandae numquam qui tenetur dignissimos molestias doloribus accusamus. Id doloremque commodi porro temporibus consequatur esse eos, voluptates non! Assumenda pariatur molestiae error beatae sit, quia, porro doloremque labore eveniet quaerat enim rem, officia quo ut natus odio nihil!
+                <br> 
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, distinctio.
+            </p>
+            <div class="bg bg4">
+                <h2 class="desc">SURFING</h2>
+
+            </div>
+            <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem ab delectus nostrum sit minima! Adipisci nulla dicta voluptate error, architecto libero! Itaque provident mollitia adipisci laboriosam quam doloribus ipsam, aliquam, enim quaerat ut sed deserunt accusamus magnam repellendus reprehenderit accusantium fuga maxime impedit! Hic ullam eius asperiores. Sequi, distinctio id?
+                <br> 
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, distinctio.
+            </p>
+
+
+
+
+
+
+        </section>
+
+
+    </div>
+    
+</body>
+</html>
